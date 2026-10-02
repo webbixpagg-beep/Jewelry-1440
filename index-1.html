@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090c">
+<meta name="description" content="Jewelry 1440 — joyas enchapadas, piezas personalizadas y piezas al gusto del cliente. Envíos a todo el país.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Jewelry 1440 | Joyas enchapadas">
+<meta property="og:description" content="Joyas enchapadas, piezas personalizadas y piezas al gusto del cliente.">
+<meta property="og:type" content="website">
+<title>Jewelry 1440 | Joyas que hablan de vos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.product-art img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  position:relative;
+  z-index:1;
+  filter:drop-shadow(0 12px 12px rgba(0,0,0,.35));
+  transition:.3s;
+}
+.product:hover .product-art img{transform:scale(1.035);}
+.add.consult{
+  display:grid;
+  place-items:center;
+  text-decoration:none;
+  font-size:16px;
+}
+.filters{display:flex;flex-wrap:wrap;gap:8px;}
+@media(max-width:650px){
+  .product-art img{object-fit:cover;}
+}
+</style>
+
+</head>
+<body>
+<div class="topline"></div>
+<header><nav class="nav" aria-label="Navegación principal">
+<a class="brand" href="#inicio" aria-label="Jewelry 1440, inicio">
+  <span class="brand-mark">1440</span>
+  <span class="brand-name">JEWELRY 1440<small>TIMELESS DETAILS</small></span>
+</a>
+<div class="links" id="navLinks">
+<a href="#coleccion">Colección</a><a href="#categorias">Categorías</a><a href="#personalizados">Personalizados</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+</div>
+<div class="nav-actions"><button class="cart" id="openCart" aria-label="Abrir bolsa">BOLSA <b id="cartCount">0</b> <span aria-hidden="true">◇</span></button><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button></div>
+</nav></header>
+
+<main>
+<section class="hero" id="inicio"><div class="hero-inner"><div class="eyebrow">Elegancia en cada detalle</div><h1>JEWELRY<span>1440</span></h1><p>Joyas enchapadas que acompañan tu esencia. Diseños pensados para cada momento, desde lo cotidiano hasta lo inolvidable.</p><a class="button" href="#coleccion">Descubrí la colección <span>↗</span></a></div><div class="hero-mark">Una pieza. Infinitas formas de ser.</div></section>
+
+<div class="marquee"><span><i>✧</i> Detalles que perduran</span><span><i>✧</i> Tu estilo, tu esencia</span><span><i>✧</i> Brillá a tu manera</span></div>
+
+<section id="categorias" class="section"><div class="section-head"><span class="kicker">Encontrá tu favorito</span><h2>Un detalle para cada vos</h2><p>Explorá piezas versátiles que elevan cualquier look.</p></div>
+<div class="categories">
+<a class="category" href="#coleccion" data-jump="collares"><svg viewBox="0 0 120 120" fill="none"><path d="M22 24C30 64 43 83 60 83S90 64 98 24" stroke="currentColor" stroke-width="2"/><path d="M60 81v13" stroke="#c5ad65" stroke-width="2"/><path d="M60 91c-8 0-13 6-13 12 0 8 13 15 13 15s13-7 13-15c0-6-5-12-13-12Z" transform="translate(0 -4)" stroke="#d5bd78" stroke-width="2"/><circle cx="60" cy="97" r="3" fill="#c5ad65"/></svg><div><strong>Collares</strong><small>El toque final</small></div></a>
+<a class="category" href="#coleccion" data-jump="pulseras"><svg viewBox="0 0 120 120" fill="none"><ellipse cx="60" cy="60" rx="39" ry="19" transform="rotate(-30 60 60)" stroke="currentColor" stroke-width="2.5"/><ellipse cx="60" cy="60" rx="31" ry="13" transform="rotate(-30 60 60)" stroke="#c5ad65" stroke-width="1.5"/><path d="m78 37 6-7 6 7-6 7-6-7Z" fill="#c5ad65"/></svg><div><strong>Pulseras</strong><small>Siempre con vos</small></div></a>
+<a class="category" href="#coleccion" data-jump="anillos"><svg viewBox="0 0 120 120" fill="none"><ellipse cx="60" cy="72" rx="28" ry="17" stroke="currentColor" stroke-width="3"/><path d="M48 56 60 37l12 19" stroke="#c5ad65" stroke-width="2"/><path d="m60 31 9 9-9 9-9-9 9-9Z" stroke="currentColor" stroke-width="2" fill="#a7b8d6"/></svg><div><strong>Anillos</strong><small>Pequeños símbolos</small></div></a>
+</div></section>
+
+<section id="coleccion" class="products-section"><div class="section"><div class="section-head"><span class="kicker">Jewelry 1440 / selección</span><h2>Piezas destacadas</h2><p>Una selección inicial para descubrir el universo Jewelry 1440.</p></div>
+<div class="filters" role="group" aria-label="Filtrar productos">
+<button class="filter active" data-filter="todos">Todos</button>
+<button class="filter" data-filter="collares">Collares</button>
+<button class="filter" data-filter="pulseras">Pulseras</button>
+<button class="filter" data-filter="anillos">Anillos</button>
+<button class="filter" data-filter="conjuntos">Conjuntos</button>
+</div>
+<div class="product-grid" id="productGrid">
+
+<article class="product" data-category="anillos" data-name="Anillo clásico">
+  <div class="product-art">
+    <img src="anillos-1.jpg" alt="Anillo clásico" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Anillo</div>
+    <h3>Anillo clásico</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Anillo%20cl%C3%A1sico." target="_blank" rel="noopener" aria-label="Consultar Anillo clásico">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="anillos" data-name="Anillo sello">
+  <div class="product-art">
+    <img src="anillos-2.jpg" alt="Anillo sello" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Anillo</div>
+    <h3>Anillo sello</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Anillo%20sello." target="_blank" rel="noopener" aria-label="Consultar Anillo sello">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="anillos" data-name="Anillo floral">
+  <div class="product-art">
+    <img src="anillos-3.jpg" alt="Anillo floral" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Anillo</div>
+    <h3>Anillo floral</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Anillo%20floral." target="_blank" rel="noopener" aria-label="Consultar Anillo floral">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="anillos" data-name="Anillo detalle">
+  <div class="product-art">
+    <img src="anillos-4.jpg" alt="Anillo detalle" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Anillo</div>
+    <h3>Anillo detalle</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Anillo%20detalle." target="_blank" rel="noopener" aria-label="Consultar Anillo detalle">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena multicapa">
+  <div class="product-art">
+    <img src="cadenas-1.jpg" alt="Cadena multicapa" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena multicapa</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20multicapa." target="_blank" rel="noopener" aria-label="Consultar Cadena multicapa">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena clásica">
+  <div class="product-art">
+    <img src="cadenas-2.jpg" alt="Cadena clásica" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena clásica</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20cl%C3%A1sica." target="_blank" rel="noopener" aria-label="Consultar Cadena clásica">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena cruz">
+  <div class="product-art">
+    <img src="cadenas-3.jpg" alt="Cadena cruz" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena cruz</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20cruz." target="_blank" rel="noopener" aria-label="Consultar Cadena cruz">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena medalla">
+  <div class="product-art">
+    <img src="cadenas-4.jpg" alt="Cadena medalla" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena medalla</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20medalla." target="_blank" rel="noopener" aria-label="Consultar Cadena medalla">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena corazón">
+  <div class="product-art">
+    <img src="cadenas-5.jpg" alt="Cadena corazón" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena corazón</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20coraz%C3%B3n." target="_blank" rel="noopener" aria-label="Consultar Cadena corazón">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="collares" data-name="Cadena oval">
+  <div class="product-art">
+    <img src="cadenas-6.jpg" alt="Cadena oval" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Collar</div>
+    <h3>Cadena oval</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Cadena%20oval." target="_blank" rel="noopener" aria-label="Consultar Cadena oval">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="conjuntos" data-name="Conjunto trébol">
+  <div class="product-art">
+    <img src="conjuntos-1.jpg" alt="Conjunto trébol" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Conjunto</div>
+    <h3>Conjunto trébol</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Conjunto%20tr%C3%A9bol." target="_blank" rel="noopener" aria-label="Consultar Conjunto trébol">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="conjuntos" data-name="Conjunto verde">
+  <div class="product-art">
+    <img src="conjuntos-2.jpg" alt="Conjunto verde" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Conjunto</div>
+    <h3>Conjunto verde</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Conjunto%20verde." target="_blank" rel="noopener" aria-label="Consultar Conjunto verde">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="pulseras" data-name="Pulsera medalla">
+  <div class="product-art">
+    <img src="pulseras-1.jpg" alt="Pulsera medalla" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Pulsera</div>
+    <h3>Pulsera medalla</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Pulsera%20medalla." target="_blank" rel="noopener" aria-label="Consultar Pulsera medalla">↗</a>
+    </div>
+  </div>
+</article>
+
+<article class="product" data-category="pulseras" data-name="Pulsera Gold">
+  <div class="product-art">
+    <img src="pulseras-2.jpg" alt="Pulsera Gold" loading="lazy">
+  </div>
+  <div class="product-info">
+    <div class="product-type">Pulsera</div>
+    <h3>Pulsera Gold</h3>
+    <div class="product-bottom">
+      <span class="price">Consultar precio</span>
+      <a class="add consult" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20Pulsera%20Gold." target="_blank" rel="noopener" aria-label="Consultar Pulsera Gold">↗</a>
+    </div>
+  </div>
+</article>
+</div>
+<div class="note">Precios y disponibilidad · Consultá cada pieza por WhatsApp.</div></div></section>
+
+<section id="personalizados" class="custom-section">
+<div class="custom-inner"><div class="custom-copy"><span class="kicker">Jewelry 1440 / exclusivo</span><h2>Tu idea.<br><em>Nuestra pieza.</em></h2>
+<p>¿No encontrás exactamente lo que buscás? En Jewelry 1440 <strong>hacemos piezas personalizadas</strong> y también <strong>conseguimos piezas al gusto del cliente</strong>.</p>
+<p>Mandanos una referencia, una foto o simplemente contanos qué imaginás. Te ayudamos a encontrar una opción que se adapte a vos.</p>
+<a class="button" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20una%20pieza%20personalizada." target="_blank" rel="noopener">Consultar por WhatsApp <span>↗</span></a></div>
+<div class="custom-card"><div class="custom-number">1440</div><div class="custom-lines"></div><div class="custom-caption">CUSTOM PIECES</div><div class="custom-points"><span><b>01</b> Personalizadas</span><span><b>02</b> A tu gusto</span><span><b>03</b> Consultá disponibilidad</span></div></div></div>
+</section>
+
+<section id="nosotros" class="section"><div class="story"><div class="story-visual"><div class="story-logo">1440</div></div><div class="story-copy"><span class="kicker">Nuestra esencia</span><h2>El valor está en los detalles.</h2><p>En Jewelry 1440 creemos que una joya es más que un accesorio: es una forma de expresar quién sos, de guardar recuerdos y de darle personalidad a cada día.</p><p>Seleccionamos diseños enchapados con una mirada simple y atemporal. Queremos que encuentres esa pieza que se siente propia y te acompaña en todos tus momentos.</p><a href="#contacto" class="button outline">Conocé más <span>↗</span></a></div></div>
+<div class="promise"><article><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7l-8-4Z"/><path d="m8 12 2.5 2.5L16 9"/></svg><strong>Elegidas con cuidado</strong><p>Diseños seleccionados para sumar estilo a tu día.</p></article><article><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg><strong>Para cada ocasión</strong><p>Piezas versátiles, para regalar o regalarte.</p></article><article><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M20 8.5c0 5-8 11-8 11s-8-6-8-11a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8Z"/></svg><strong>Hechas para vos</strong><p>Un toque personal que completa tu esencia.</p></article></div>
+</section>
+
+<section id="contacto" class="contact"><div class="section contact-inner"><span class="kicker">Hablemos</span><h2>Tu próxima joya te espera.</h2><p>¿Buscás algo especial? Hacemos piezas personalizadas y también conseguimos piezas al gusto del cliente. Escribinos y contanos qué tenés en mente.</p><div class="contact-actions"><a class="button" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20consultar%20por%20sus%20joyas." target="_blank" rel="noopener">WhatsApp ↗</a><a class="button outline" href="https://www.instagram.com/1440.jewelry/" target="_blank" rel="noopener">Instagram ↗</a></div></div></section>
+</main>
+
+<footer><div class="footer-inner"><span class="footer-brand">JEWELRY 1440</span><span>Joyas enchapadas · Buenos Aires, Argentina</span><span>© <span id="year"></span> Jewelry 1440</span></div></footer>
+
+<a class="whatsapp-float" href="https://wa.me/541134451270?text=Hola%20Jewelry%201440%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Contactar a Jewelry 1440 por WhatsApp">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.8 7.3L3.5 20l1.3-4.1A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.8 8.1c.3-.4.7-.4 1-.1l1.1 1c.3.3.3.6.1 1l-.5.8c.5 1 1.2 1.7 2.2 2.2l.8-.5c.4-.2.7-.2 1 .1l1 1c.3.3.3.7-.1 1-1 .8-2.1.8-3.3.2-2.1-1-3.8-2.7-4.8-4.8-.6-1.2-.6-2.3.2-3.3Z"/></svg>
+</a>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-panel" id="cartPanel" aria-label="Carrito de compras" aria-hidden="true">
+<div class="cart-head"><h3>Tu bolsa</h3><button class="close" id="closeCart" aria-label="Cerrar carrito">×</button></div>
+<div class="cart-items" id="cartItems"><div class="empty">Todavía no agregaste piezas.<br>Elegí tus favoritas de la colección.</div></div>
+<div class="cart-foot"><div class="total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><a class="button" id="checkout" href="#" target="_blank" rel="noopener">Consultar pedido por WhatsApp ↗</a></div>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
