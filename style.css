@@ -1,0 +1,45 @@
+/* Colores tomados del logo: negro, azul mármol y dorado. Se cambian acá. */
+:root{--bg:#000;--ink:#efe8da;--mut:#a9b0bd;--gold:#d8bc84;--ice:#8fb1e3;--navy:#1d2c47;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:Jost,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--bg);color:var(--ink);font:300 1.05rem/1.7 var(--sans)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px}
+[id]{scroll-margin-top:4rem}
+.sr{position:absolute;left:-9999px}
+.wrap{max-width:900px;margin:auto;padding:4.5rem 1.4rem}
+h2{font:400 clamp(2rem,6vw,2.8rem)/1.1 var(--serif);color:var(--gold);margin-bottom:2rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.4rem;border-bottom:1px solid var(--navy);position:sticky;top:0;background:var(--bg);z-index:5}
+.brand{font:600 1.5rem var(--serif);color:var(--gold)}
+nav{display:flex;gap:1.5rem;color:var(--mut);font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:.85rem 1.8rem;border:1px solid var(--gold);border-radius:2px;font-weight:500;color:var(--gold)}
+.btn.fill{background:linear-gradient(135deg,#f3e2b8,#b8975a);color:#16110a;border-color:transparent}
+.hero{text-align:center;padding-top:2rem}
+.hero img{width:min(440px,92vw);height:auto}
+.hero p{font:400 clamp(1.5rem,5vw,2.1rem)/1.3 var(--serif);margin:.5rem auto 1.8rem;max-width:22em}
+.hero .btn{margin:.35rem}
+.row{display:grid;gap:.4rem 2rem;grid-template-columns:1fr;padding:1.6rem 0;border-top:1px solid var(--navy)}
+.row:last-child{border-bottom:1px solid var(--navy)}
+.row h3{font:600 2rem/1.1 var(--serif)}
+.row p{color:var(--mut)}
+.row a{color:var(--ice);font-weight:500}
+.row a:hover{color:var(--gold)}
+@media(min-width:700px){.row{grid-template-columns:200px 1fr auto;align-items:baseline}}
+ol{list-style:none;padding:0;display:grid;gap:1.6rem}
+li{display:grid;grid-template-columns:3rem 1fr;align-items:baseline}
+li b{font:400 2.6rem/1 var(--serif);color:var(--ice)}
+li strong{display:block;font:600 1.5rem var(--serif)}
+li span{color:var(--mut)}
+footer{text-align:center}
+footer p{color:var(--mut);margin-bottom:1.5rem}
+footer .btn{margin:.35rem}
+small{display:block;margin-top:2.5rem;color:var(--mut);font-size:.85rem}
+.fab{position:fixed;right:1rem;bottom:1rem;z-index:6;box-shadow:0 4px 18px #000}
+@media(max-width:600px){nav{display:none}}
+
+/* Galería de fotos de cada colección */
+.gal{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-top:1rem}
+.gal img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--navy)}
+@media(min-width:700px){.gal{grid-template-columns:repeat(4,1fr)}}
